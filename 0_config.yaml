@@ -4,18 +4,12 @@ dirs:
   recon_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/subjects_recon'
   mri_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/subjects_mri'
   proc_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/proc_data'
-  raw_data_dir: '/d/mjt/8'
   atlas_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/support_files/atlas'
   model_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/results/6_modes'
   results_dir: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/results'
 
 filenames:
-  demographics_fname: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/support_files/demographics.csv'
   masterlist_fname: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/support_files/masterlist_complete_19March2026_LB.xlsx'
-  masterlist_csv_fname: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/support_files/masterlist.xlsx'
-  dicom_paths_fname: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/support_files/dicom_paths_manual_updates.xlsx'
-  subject_list_fname: '/d/mjt/9/projects/Dynamo-Analysis/POND-EGNG/EGNG_final_subjects.xlsx'
-
 
 recon-params:
   n_cores_per_recon: 1
@@ -28,10 +22,6 @@ preproc_params:
   resampling_freq: 250
 
 analysis_params:
-    freq_bins:
-        labels: ['Theta', 'Alpha', 'Beta', 'Low_Gamma', 'High_Gamma']
-        fmins: [4, 8, 15, 35, 65]
-        fmaxs: [7, 16, 30, 55, 80]
     dynemo_prep:
         n_embeddings: 15
         n_pca: 90
